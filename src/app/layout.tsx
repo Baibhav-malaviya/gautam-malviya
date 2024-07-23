@@ -27,7 +27,6 @@ export default function RootLayout({
 						prefetch={false}
 					>
 						<VideoIcon className="h-6 w-6" />
-						<span className="sr-only">Acme Video Editor</span>
 					</Link>
 					<nav className="flex gap-4 sm:gap-6">
 						<Link
@@ -51,7 +50,7 @@ export default function RootLayout({
 				{children}
 				<footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t justify-center">
 					<p className="text-xs text-muted-foreground">
-						&copy; 2024 Acme Inc. All rights reserved.
+						&copy; {new Date().getFullYear()} . All rights reserved.
 					</p>
 					<nav className="flex gap-4 sm:gap-6">
 						<Link

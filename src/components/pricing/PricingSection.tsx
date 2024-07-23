@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Card } from "@/components/ui/card";
 import { CheckCircle2 } from "lucide-react";
 import SampleVideoButton from "./SampleVideoButton";
 import { Meteors } from "../ui/meteors";
@@ -88,7 +87,7 @@ const ServicesSection: React.FC = () => {
 	];
 
 	return (
-		<section className="py-20 bg-background">
+		<section className="py-10 bg-background">
 			<div className="container mx-auto px-4">
 				<h2 className="text-4xl font-bold text-center mb-12">What I Offer</h2>
 

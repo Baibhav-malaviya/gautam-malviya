@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { SparklesCore } from "./ui/sparkles";
+import { Mail, PhoneIcon } from "lucide-react";
+import AnimatedButton from "./AnimatedButton";
 
 const Component: React.FC = () => {
 	return (
@@ -16,28 +18,36 @@ const Component: React.FC = () => {
 						<source src="/landing.mp4" type="video/mp4" />
 					</video>
 					<div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 md:px-6">
-						<h1 className="text-3xl md:text-5xl font-bold tracking-tighter">
+						<h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-center">
 							Gautam Malviya - Video Editor
 						</h1>
-
-						<p className="max-w-[700px] text-lg md:text-xl mt-4">
+						<p className="max-w-[700px] text-lg md:text-xl mt-4 text-center">
 							Crafting compelling visual stories through the art of video
 							editing. From commercials to feature films, I bring your vision to
 							life.
 						</p>
-						<div className="mt-8">
-							<Link
-								href="#contact"
-								className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-								prefetch={false}
-							>
-								Get in Touch
-							</Link>
+
+						<div className="mt-8 flex flex-row gap-4">
+							<AnimatedButton>
+								<a
+									href="mailto:gautam@example.com"
+									className="inline-flex px-3 py-2"
+								>
+									<Mail className="w-5 h-5 mr-2" />
+									Email Me
+								</a>
+							</AnimatedButton>
+							<AnimatedButton>
+								<a href="tel:+919852902299" className="inline-flex px-3 py-2">
+									<PhoneIcon className="w-5 h-5 mr-2" />
+									Call Me
+								</a>
+							</AnimatedButton>
 						</div>
 					</div>
 				</section>
 
-				<div className="h-[40rem] relative w-full bg-yellow-50  flex flex-col items-center justify-center overflow-hidden">
+				<div className=" relative w-full bg-yellow-50  flex flex-col items-center justify-center overflow-hidden">
 					<div className="w-full absolute inset-0 h-screen">
 						<SparklesCore
 							id="tsparticlesfullpage"
@@ -50,58 +60,70 @@ const Component: React.FC = () => {
 						/>
 					</div>
 
-					<section className="w-full py-12 md:py-24 lg:py-32">
-						<div className="container px-4 md:px-6">
-							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-								<div className="flex flex-col items-center text-center">
-									<ScissorsIcon className="h-12 w-12 text-primary" />
-									<h3 className="text-xl font-bold mt-4">Precise Editing</h3>
-									<p className="text-muted-foreground mt-2">
+					<section className="w-full py-8 sm:py-12 md:py-24 lg:py-32 bg-yellow-50">
+						<div className="container px-4 sm:px-6 md:px-8 mx-auto">
+							<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+								<div className="flex flex-col items-center text-center p-4">
+									<ScissorsIcon className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />
+									<h3 className="text-lg sm:text-xl font-bold mt-3 sm:mt-4">
+										Precise Editing
+									</h3>
+									<p className="text-sm sm:text-base text-muted-foreground mt-2">
 										Seamless cuts and transitions that enhance the narrative
 										flow of your project.
 									</p>
 								</div>
 
-								<div className="flex flex-col items-center text-center">
-									<PaletteIcon className="h-12 w-12 text-primary" />
-									<h3 className="text-xl font-bold mt-4">Color Grading</h3>
-									<p className="text-muted-foreground mt-2">
+								<div className="flex flex-col items-center text-center p-4">
+									<PaletteIcon className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />
+									<h3 className="text-lg sm:text-xl font-bold mt-3 sm:mt-4">
+										Color Grading
+									</h3>
+									<p className="text-sm sm:text-base text-muted-foreground mt-2">
 										Expert color correction and grading to set the perfect mood
 										for your video.
 									</p>
 								</div>
 
-								<div className="flex flex-col items-center text-center">
-									<HeadphonesIcon className="h-12 w-12 text-primary" />
-									<h3 className="text-xl font-bold mt-4">Sound Design</h3>
-									<p className="text-muted-foreground mt-2">
+								<div className="flex flex-col items-center text-center p-4">
+									<HeadphonesIcon className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />
+									<h3 className="text-lg sm:text-xl font-bold mt-3 sm:mt-4">
+										Sound Design
+									</h3>
+									<p className="text-sm sm:text-base text-muted-foreground mt-2">
 										Crafting immersive audio experiences to complement the
 										visual narrative.
 									</p>
 								</div>
 
-								<div className="flex flex-col items-center text-center">
-									<WandIcon className="h-12 w-12 text-primary" />
-									<h3 className="text-xl font-bold mt-4">Visual Effects</h3>
-									<p className="text-muted-foreground mt-2">
+								<div className="flex flex-col items-center text-center p-4">
+									<WandIcon className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />
+									<h3 className="text-lg sm:text-xl font-bold mt-3 sm:mt-4">
+										Visual Effects
+									</h3>
+									<p className="text-sm sm:text-base text-muted-foreground mt-2">
 										Seamlessly integrated VFX that elevate your story without
 										overpowering it.
 									</p>
 								</div>
 
-								<div className="flex flex-col items-center text-center">
-									<LayersIcon className="h-12 w-12 text-primary" />
-									<h3 className="text-xl font-bold mt-4">Motion Graphics</h3>
-									<p className="text-muted-foreground mt-2">
+								<div className="flex flex-col items-center text-center p-4">
+									<LayersIcon className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />
+									<h3 className="text-lg sm:text-xl font-bold mt-3 sm:mt-4">
+										Motion Graphics
+									</h3>
+									<p className="text-sm sm:text-base text-muted-foreground mt-2">
 										Eye-catching animations and graphics that bring your message
 										to life.
 									</p>
 								</div>
 
-								<div className="flex flex-col items-center text-center">
-									<VideoIcon className="h-12 w-12 text-primary" />
-									<h3 className="text-xl font-bold mt-4">Diverse Portfolio</h3>
-									<p className="text-muted-foreground mt-2">
+								<div className="flex flex-col items-center text-center p-4">
+									<VideoIcon className="h-10 w-10 sm:h-12 sm:w-12 text-primary" />
+									<h3 className="text-lg sm:text-xl font-bold mt-3 sm:mt-4">
+										Diverse Portfolio
+									</h3>
+									<p className="text-sm sm:text-base text-muted-foreground mt-2">
 										Experience across various genres including commercials,
 										documentaries, and feature films.
 									</p>
@@ -110,29 +132,6 @@ const Component: React.FC = () => {
 						</div>
 					</section>
 				</div>
-
-				{/* <section className="w-full bg-background py-12 md:py-24 lg:py-32">
-					<div className="container px-4 md:px-6 text-center">
-						<div className="space-y-4">
-							<h2 className="text-3xl md:text-4xl font-bold tracking-tighter">
-								Let&apos;s Create Something Amazing Together
-							</h2>
-							<p className="max-w-[700px] mx-auto text-muted-foreground md:text-xl">
-								Whether you&apos;re working on a commercial, music video, or
-								feature film, I&apos;m here to bring your vision to the screen.
-							</p>
-						</div>
-						<div className="mt-8">
-							<Link
-								href="#contact"
-								className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-								prefetch={false}
-							>
-								Contact Me
-							</Link>
-						</div>
-					</div>
-				</section> */}
 			</main>
 		</div>
 	);
