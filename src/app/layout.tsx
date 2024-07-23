@@ -27,7 +27,7 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<header className="px-4 lg:px-6 h-14 flex items-center justify-between">
 					<Link
-						href="#"
+						href="/"
 						className="flex items-center justify-center"
 						prefetch={false}
 					>
@@ -36,32 +36,19 @@ export default function RootLayout({
 					</Link>
 					<nav className="flex gap-4 sm:gap-6">
 						<Link
-							href="#"
+							href="/"
 							className="text-sm font-medium hover:underline underline-offset-4"
 							prefetch={false}
 						>
-							Features
+							Home
 						</Link>
+
 						<Link
-							href="#"
-							className="text-sm font-medium hover:underline underline-offset-4"
-							prefetch={false}
-						>
-							Pricing
-						</Link>
-						<Link
-							href="#"
+							href="/about"
 							className="text-sm font-medium hover:underline underline-offset-4"
 							prefetch={false}
 						>
 							About
-						</Link>
-						<Link
-							href="#"
-							className="text-sm font-medium hover:underline underline-offset-4"
-							prefetch={false}
-						>
-							Contact
 						</Link>
 					</nav>
 				</header>
