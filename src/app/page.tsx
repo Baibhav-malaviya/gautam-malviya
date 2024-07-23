@@ -15,7 +15,6 @@ export default function Home() {
 			<TracingBeam>
 				<Component />
 				<PricingSection />
-				{/* <ExpandableCardDemo /> */}
 			</TracingBeam>
 		</>
 	);

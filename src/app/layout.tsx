@@ -1,14 +1,9 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/KpLeNwe1NAX
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import { VideoIcon } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -52,6 +47,7 @@ export default function RootLayout({
 						</Link>
 					</nav>
 				</header>
+				<Separator className="mb-2" />
 				{children}
 				<footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t justify-center">
 					<p className="text-xs text-muted-foreground">

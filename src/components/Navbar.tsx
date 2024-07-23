@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { SparklesCore } from "./ui/sparkles";
-import LampDemo from "./ui/lamp";
 
 const Component: React.FC = () => {
 	return (
