@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
@@ -90,7 +91,6 @@ const ServicesSection: React.FC = () => {
 		<section className="py-10 bg-background">
 			<div className="container mx-auto px-4">
 				<h2 className="text-4xl font-bold text-center mb-12">What I Offer</h2>
-
 				<motion.div
 					className="grid md:grid-cols-3 gap-8"
 					initial={{ opacity: 0, y: 20 }}

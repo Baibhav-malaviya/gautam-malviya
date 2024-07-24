@@ -19,7 +19,7 @@ const Component: React.FC = () => {
 					</video>
 					<div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 md:px-6">
 						<h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-center">
-							Gautam Malviya - Video Editor
+							Gautam Malaviya - Video Editor
 						</h1>
 						<p className="max-w-[700px] text-lg md:text-xl mt-4 text-center">
 							Crafting compelling visual stories through the art of video
@@ -30,7 +30,7 @@ const Component: React.FC = () => {
 						<div className="mt-8 flex flex-row gap-4">
 							<AnimatedButton>
 								<a
-									href="mailto:gautam@example.com"
+									href="mailto:gutm1811@gmail.com"
 									className="inline-flex px-3 py-2"
 								>
 									<Mail className="w-5 h-5 mr-2" />

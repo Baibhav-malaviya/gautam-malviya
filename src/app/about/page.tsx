@@ -9,6 +9,56 @@ const brands = [
 	// Add more brands here as needed
 ];
 
+export const metadata = {
+	title: "About Us | Experienced Video Editor",
+	description:
+		"Video editor with 2+ years of experience, BJMC degree, and over 20 satisfied clients. Specializing in corporate videos, short films, and engaging visual content.",
+	keywords: [
+		"video editor",
+		"BJMC graduate",
+		"corporate videos",
+		"short films",
+		"visual storytelling",
+		"mass communication",
+		"video production",
+		"client experience",
+		"creative content",
+	],
+	openGraph: {
+		title: "Experienced Video Editor | 2+ Years & 20+ Clients",
+		description:
+			"BJMC-educated video editor with a track record of creating stunning visuals for diverse clients. Expertise in corporate videos and short films.",
+		type: "profile",
+		locale: "en_US",
+		site_name: "Gautam Malaviya",
+		images: [
+			{
+				//todo we have to add the path of the client image
+				url: "https://yourdomain.com/path-to-your-image.jpg",
+				width: 1200,
+				height: 630,
+				alt: "Video Editing Portfolio Showcase",
+			},
+		],
+	},
+	linkedin: {
+		title: "Professional Video Editor | BJMC Graduate",
+		description:
+			"Over 2 years of experience crafting engaging videos for 20+ clients. Specializing in corporate and creative content.",
+		image:
+			"https://media.licdn.com/dms/image/D5603AQHZI16v8paq3g/profile-displayphoto-shrink_400_400/0/1720760807592?e=1727308800&v=beta&t=Bb2U2Fs0fpjCnKsAVP6TXDfzGvPyiCScEbZ8YJdW58c",
+	},
+	instagram: {
+		title: "Video Editor Extraordinaire 🎥✨",
+		description:
+			"2+ years exp | 20+ happy clients | BJMC grad | Turning ideas into stunning visuals",
+	},
+	robots: {
+		index: true,
+		follow: true,
+	},
+};
+
 export default function Component() {
 	return (
 		<>
@@ -36,7 +86,7 @@ export default function Component() {
 					<div className="space-y-4 text-white">
 						<div className="space-y-2">
 							<h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-								Meet Gautam Malviya
+								Meet Gautam Malaviya
 							</h2>
 
 							<p className="text-neutral-300 md:text-xl">
@@ -47,12 +97,20 @@ export default function Component() {
 							<div className="grid gap-1">
 								<h3 className="text-lg font-semibold">About Me</h3>
 								<p className="text-neutral-300">
-									I&apos;m a video editor with over 2 yrs of experience in the
-									industry. I specialize in creating engaging and visually
-									stunning videos for a variety of clients, from corporate
-									videos to short films. My attention to detail and creative
-									flair allow me to bring even the most complex projects to
-									life.
+									I&apos;m a video editor with over 3 years of experience in the
+									industry, backed by a degree in Bachelor of Journalism and
+									Mass Communication (BJMC). Throughout my career, I&apos;ve had
+									the privilege of working with more than 20 clients, each
+									project adding to my diverse portfolio. I specialize in
+									creating engaging and visually stunning videos for a variety
+									of needs, from corporate videos to short films. My academic
+									background in mass communication, combined with my extensive
+									client experience, allows me to bring a unique perspective to
+									each project. Whether it&apos;s a complex narrative or a
+									straightforward promotional video, my attention to detail and
+									creative flair ensure that I can bring any vision to life,
+									effectively conveying messages through the power of visual
+									storytelling.
 								</p>
 							</div>
 							<div className="grid gap-1">
