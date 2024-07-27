@@ -5,6 +5,7 @@ import Link from "next/link";
 import { VideoIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import Footer from "@/components/Footer";
+import publicAssets from "@/data/publicAssets.json";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,7 +14,7 @@ export const metadata = {
 	description:
 		"Expert video editing services based in India. 2+ years experience, 20+ satisfied clients. BJMC graduate specializing in corporate videos, short films, and engaging visual content.",
 	icons: {
-		icon: "/Gautam-Malviya.ico", // This will be used for the icon
+		icon: `${publicAssets.icon}`, // This will be used for the icon
 		apple: "/Gautam-Malviya.ico", // This will be used for the apple icon
 	},
 	keywords: [

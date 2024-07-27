@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { SparklesCore } from "./ui/sparkles";
 import { Mail, PhoneIcon } from "lucide-react";
 import AnimatedButton from "./AnimatedButton";
+import publicAssets from "../../public/publicAssets.json";
 
 const Component: React.FC = () => {
 	return (
@@ -15,7 +15,7 @@ const Component: React.FC = () => {
 						muted
 						playsInline
 					>
-						<source src="/landing.mp4" type="video/mp4" />
+						<source src={publicAssets.landing} type="video/mp4" />
 					</video>
 					<div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 md:px-6">
 						<h1 className="text-3xl md:text-5xl font-bold tracking-tighter text-center">

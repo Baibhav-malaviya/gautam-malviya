@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import SampleVideoButton from "./SampleVideoButton";
 import { Meteors } from "../ui/meteors";
+import publicAssets from "@/data/publicAssets.json";
 
 interface ServiceTierProps {
 	title: string;
@@ -60,7 +61,7 @@ const ServicesSection: React.FC = () => {
 				"Basic color grading",
 				"Stock music included",
 			],
-			videoUrl: "/landing.mp4",
+			videoUrl: `${publicAssets.sample.short}`,
 		},
 		{
 			title: "Social Media Reel Creation",
@@ -71,7 +72,7 @@ const ServicesSection: React.FC = () => {
 				"Custom motion graphics",
 				"Licensed music included",
 			],
-			videoUrl: "/landing.mp4",
+			videoUrl: `${publicAssets.sample.reel}`,
 		},
 		{
 			title: "Long-Form Video Production",
@@ -83,7 +84,7 @@ const ServicesSection: React.FC = () => {
 				"Licensed music and SFX",
 				"Subtitles and captions",
 			],
-			videoUrl: "/landing.mp4",
+			videoUrl: `${publicAssets.sample.long}`,
 		},
 	];
 

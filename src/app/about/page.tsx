@@ -2,10 +2,11 @@ import { CardBody, CardContainer } from "@/components/ui/3d-card";
 import { Boxes } from "@/components/ui/background-boxes";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import publicAssets from "@/data/publicAssets.json";
 const brands = [
-	{ name: "Mind set", logo: "/brands/service-logo1.jpg" },
-	{ name: "Raj kamal", logo: "/brands/service-logo2.jpg" },
-	{ name: "Hey pitch", logo: "/brands/service-logo3.jpg" },
+	{ name: "Mind set", logo: `${publicAssets.serviceBrands.brand1}` },
+	{ name: "Raj kamal", logo: `${publicAssets.serviceBrands.brand2}` },
+	{ name: "Hey pitch", logo: `${publicAssets.serviceBrands.brand3}` },
 	// Add more brands here as needed
 ];
 
@@ -71,7 +72,7 @@ export default function Component() {
 							<CardBody className="bg-slate-900 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl overflow-hidden border">
 								<div className="relative">
 									<Image
-										src="/Gautam-Malviya.jpg"
+										src={publicAssets.profile}
 										width={550}
 										height={550}
 										alt="Video Editor"
