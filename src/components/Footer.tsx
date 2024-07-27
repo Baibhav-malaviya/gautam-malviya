@@ -13,18 +13,18 @@ const Footer = () => {
 					</p>
 					<Separator orientation="vertical" className="hidden h-4 md:block" />
 					<nav className="flex gap-4 sm:gap-6">
-						<Link
-							href="#"
-							className="text-sm text-muted-foreground hover:underline underline-offset-4"
+						<span
+							// href="#"
+							className="text-sm text-muted-foreground "
 						>
 							Terms of Service
-						</Link>
-						<Link
-							href="#"
-							className="text-sm text-muted-foreground hover:underline underline-offset-4"
+						</span>
+						<span
+							// href="#"
+							className="text-sm text-muted-foreground "
 						>
 							Privacy
-						</Link>
+						</span>
 					</nav>
 				</div>
 				<div className="flex items-center gap-4">

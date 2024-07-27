@@ -152,22 +152,26 @@ export default function Component() {
 							content.
 						</p>
 					</div>
-					<div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
-						{brands.map((brand, index) => (
-							<Card
-								key={index}
-								className="w-60 aspect-square flex items-center justify-center p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
-							>
-								<div className="relative w-full h-full">
-									<Image
-										src={brand.logo}
-										alt={`${brand.name} Logo`}
-										fill
-										style={{ objectFit: "contain" }}
-									/>
-								</div>
-							</Card>
-						))}
+
+					<div className="relative">
+						<div className="absolute inset-0 h-full w-full bg-gradient-to-br from-blue-200/80 to-teal-200/70 transform scale-[0.80] rounded-full blur-3xl" />
+						<div className="relative flex flex-wrap justify-center items-center gap-8 md:gap-12 lg:gap-16">
+							{brands.map((brand, index) => (
+								<Card
+									key={index}
+									className="w-60 aspect-square flex items-center justify-center p-8 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+								>
+									<div className="relative w-full h-full">
+										<Image
+											src={brand.logo}
+											alt={`${brand.name} Logo`}
+											fill
+											style={{ objectFit: "contain" }}
+										/>
+									</div>
+								</Card>
+							))}
+						</div>
 					</div>
 				</div>
 			</section>
