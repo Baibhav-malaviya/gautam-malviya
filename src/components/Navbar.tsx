@@ -1,7 +1,7 @@
 import { SparklesCore } from "./ui/sparkles";
 import { Mail, PhoneIcon } from "lucide-react";
 import AnimatedButton from "./AnimatedButton";
-import publicAssets from "../../public/publicAssets.json";
+import publicAssets from "@/data/publicAssets.json";
 
 const Component: React.FC = () => {
 	return (
