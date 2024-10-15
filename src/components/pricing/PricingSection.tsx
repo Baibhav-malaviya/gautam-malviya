@@ -64,7 +64,7 @@ const ServicesSection: React.FC = () => {
 			videoUrl: `${publicAssets.sample.short}`,
 		},
 		{
-			title: "Social Media Reel Creation",
+			title: "Long video Production",
 			features: [
 				"Up to 3 minutes of edited content",
 				"3 rounds of revisions",
@@ -72,10 +72,10 @@ const ServicesSection: React.FC = () => {
 				"Custom motion graphics",
 				"Licensed music included",
 			],
-			videoUrl: `${publicAssets.sample.reel}`,
+			videoUrl: `${publicAssets.sample.long}`,
 		},
 		{
-			title: "Long-Form Video Production",
+			title: "Podcast Video Production",
 			features: [
 				"Up to 10 minutes of edited content",
 				"Unlimited revisions",
@@ -84,7 +84,7 @@ const ServicesSection: React.FC = () => {
 				"Licensed music and SFX",
 				"Subtitles and captions",
 			],
-			videoUrl: `${publicAssets.sample.long}`,
+			videoUrl: `${publicAssets.sample.podcast}`,
 		},
 	];
 
